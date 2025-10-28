@@ -1,0 +1,27 @@
+h1 {
+    font-size: 1.8em;
+    font-family: Arial;
+}
+h2 {
+    font-size: 1.5em;
+    font-family: Arial;
+}
+h3 {
+    font-size: 1.4em;
+    font-family: Arial;
+}
+p {
+    font-size: 1.2em;
+    font-family: Times New Roman;
+}
+/* Rood, groen, blauw
+ */
+.stijlRood{
+    color: red
+}
+.stijlGroen{
+    color: green
+}
+.stijlBlauw{
+    color: blue;
+}
