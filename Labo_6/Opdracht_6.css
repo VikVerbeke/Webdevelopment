@@ -1,0 +1,14 @@
+.checklist li::before{
+    list-style: none;
+    background-image: url('Images/Leeg-Vierkant.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.checked {
+    list-style: none;
+    background-image: url('Images/Aangevinkt-Vierkant.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
