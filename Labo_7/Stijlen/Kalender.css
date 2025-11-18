@@ -1,0 +1,40 @@
+thead > tr > th { /* Hoofding december */
+    color: black;
+    background-color: rgb(170,170,200);
+}
+.dagen > th { /* hoofding dagen */
+    color: rgb(200, 190, 240);
+    background-color: rgb(35,37,70);
+    border-collapse: collapse;
+    border-style: dotted;
+}
+tr { /* puntjesrand */
+    border-style: dotted;
+    border-bottom: 1px;
+    border-right: 1px;
+    border-collapse: collapse;
+}
+tbody > tr > td:first-child, tbody > tr > td:last-child{ /* Rode achtergrond weekends */
+    background-color: rgb(255, 220, 220);
+}
+tbody > tr > td {
+    border-bottom-style: dotted;
+    border-right-style: dotted;
+    border-bottom-style: dotted;
+    border-collapse: collapse;
+}
+table {
+    border: solid 1px;
+}
+.feestdag{ /* Lay-out feestdag */
+    background-color: rgb(250,120,120);
+}
+.volgendeMaand:nth-child(5), .volgendeMaand:nth-child(6), .volgendeMaand:nth-child(7){
+    background-color: grey;
+    color: lightgray;
+}
+.eindeVanDeMaand:first-child{
+    background-color: grey;
+    color: lightgray;
+    linearGradient
+}

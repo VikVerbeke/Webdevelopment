@@ -1,0 +1,32 @@
+body {
+    background-color: #fbfff1;
+    color: #4c463a;
+}
+a:hover {
+    color: #4c463a;
+    text-decoration: underline;
+}
+body > img {
+    height: 250px;
+    width: 220px;
+    padding-left: 20px;
+}
+.schuinGetypt {
+    text-decoration-line: underline;
+}
+/*.WRC {
+    List-style-image: url("../Images/Subaru-Impreza.jpg");
+    padding-left: 20px;
+    height: 20px;
+    width: 20px;
+}
+img.resize {
+    width:16px;
+    height: auto;
+}
+Subaru-Impreza.jpg {
+    height: auto;
+    width: auto;
+    max-width: 30px;
+    max-height: 30px;
+}*/

@@ -1,6 +1,5 @@
-a {
-    background-image: url('Images/Link-icoon.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 20px;
+a:before {
+    content: url("Images/Link-icoon.png");
+    height: 16px;
+    width: 16px;
 }
