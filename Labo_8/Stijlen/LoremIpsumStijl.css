@@ -1,0 +1,16 @@
+.kolom1 {
+    color: red;
+    width: 50%;
+    float: left;
+    border:1px solid black;
+}
+.kolom2 {
+    color: blue;
+    width: 50%;
+    float: left;
+    border:1px solid black;
+}
+.kolom1, .kolom2 {
+    padding: 10px;
+    box-sizing: border-box;
+}

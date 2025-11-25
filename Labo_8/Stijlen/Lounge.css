@@ -1,0 +1,71 @@
+body { /* klaar */
+    font-family: Verdana, helvetica, Arial;
+    font-size: 1.2em;
+}
+header {
+    text-align: center;
+}
+h1, h2 { /* klaar */
+    color: #007e7e;
+}
+h1 { /* klaar */
+    font-size: 1.5em;
+}
+h2{ /* klaar */
+    font-size: 1.3em;
+}
+footer {
+    font-size: 0.5em;
+    text-align: center;
+}
+#wrapper {
+    font-size: 10px;
+}
+#imgHeader {
+    font-size: 10px;
+}
+#elixirs {
+    box-sizing: border-box;
+    float: right;
+    width:30%;
+    text-align: center;
+    padding:20px;
+}
+#elixirs a:hover{
+    color:saddlebrown;
+}
+#elixirs h1 {
+    color: black;
+}
+#elixirs h2{
+    color: red;
+}
+#content {
+    font-size: 10px;
+    float: left;
+    box-sizing: border-box;
+    width: 70%;
+    padding: 20px;
+}
+#guarantee {
+    box-sizing: border-box;
+    font-size: 10px;
+    color: #444444;
+    background-color: #a7cece;
+    border-style: dashed;
+    border-color: white;
+    margin: 30px;
+    padding: 20px;
+}
+#guarantee:before {
+    Content: url("../Images/images/background.gif");
+}
+.cd {
+    font-style: italic;
+}
+.artist {
+    font-weight: bold;
+}
+article h1 {
+    color: #007e7e;
+}
