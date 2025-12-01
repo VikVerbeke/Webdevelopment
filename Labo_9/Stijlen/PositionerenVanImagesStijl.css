@@ -1,0 +1,21 @@
+article { /* klaar */
+    border: 1px solid black;
+    overflow: auto;
+}
+p {/* klaar */
+    font-size: 1.25em;
+}
+img { /* Klaar */
+    margin: 10px;
+}
+main > article { /* klaar */
+    margin: 10px;
+}
+article:nth-child(even) img{ /* Klaar */
+    margin-left: 10px;
+    float:right;
+}
+article:nth-child(odd) img { /* Klaar */
+    margin-right: 10px;
+    float:left;
+}
