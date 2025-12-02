@@ -116,7 +116,7 @@ header p {
 .bottom a:hover {
     color: red;
 }
-.bottom a:link {
+.bottom a {
     color: white;
 }
 .copyright{
