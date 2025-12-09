@@ -1,0 +1,9 @@
+.grijs-blok {
+    background-color: #dee2e6; /* Lichtgrijs */
+    height: 150px;
+    width: 100%;
+}
+
+.donker-blok {
+    background-color: #adb5bd; /* Donkergrijs */
+}

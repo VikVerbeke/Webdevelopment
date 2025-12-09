@@ -25,6 +25,7 @@ tbody > tr > td {
 }
 table {
     border: solid 1px;
+    overvflow: auto;
 }
 .feestdag{ /* Lay-out feestdag */
     background-color: rgb(250,120,120);

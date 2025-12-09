@@ -1,0 +1,29 @@
+p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#a {
+    background-color: #4c463a;
+    border: solid 2px white;
+    color: white;
+}
+#b {
+    background-color: rgb(242, 224, 122);
+    border: solid 2px white;
+}
+#c {
+    background-color: #4c463a;
+    border: solid 2px white;
+    color: white;
+}
+#d {
+    background-color: rgb(242, 224, 122);
+    border: solid 2px white;
+}
+img {
+    /* laat image opschalen,
+    maar nooit groter dan zijn origineel formaat */
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
