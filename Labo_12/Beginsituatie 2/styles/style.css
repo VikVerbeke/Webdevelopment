@@ -1,0 +1,59 @@
+html {
+    background-color: #333;
+    font-family: helvetica, sans-serif;
+}
+
+* {
+    padding: 10px;
+}
+
+header, footer {
+    background-color: #ddaa00;
+
+}
+
+header a:link, footer a:link {
+    color: #ddaa00;
+}
+
+nav {
+    background-color: #ccc;
+    padding: 5px 2px;
+}
+
+main {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+body {
+    font-size: 1em;
+    margin: 5px;
+}
+
+section {
+    margin: 5px;
+    background-color: white;
+}
+
+nav > a {
+    margin: 0 5px;
+    border: 1px #ccc;
+}
+
+section > a {
+    border: 1px #333;
+    text-align: center;
+}
+
+img {
+    padding: 0px;
+}
+
+@media screen and (min-width: 700px){
+    main {
+        flex-direction: row;
+    }
+}
