@@ -19,6 +19,7 @@ header a:link, footer a:link {
 nav {
     background-color: #ccc;
     padding: 5px 2px;
+    display: flex;
 }
 
 main {
@@ -39,12 +40,19 @@ section {
 }
 
 nav > a {
+    background-color: white;
+    color: #ddab00;
+    border: 1px solid black;
     margin: 0 5px;
-    border: 1px #ccc;
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
 }
 
 section > a {
-    border: 1px #333;
+    border: #333333 1px solid;
+    text-decoration: none;
+    color: grey;
     text-align: center;
 }
 
