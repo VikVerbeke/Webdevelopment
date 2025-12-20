@@ -12,7 +12,7 @@ h2 {
 font-weight: bold;
 }
 .foto {
-    width: 450px;  /* Of een percentage, bijv. 50% */
+    width: 475px;  /* Of een percentage, bijv. 50% */
     height: auto;  /* Cruciaal om vervorming te voorkomen */
     display: inline-block;
 }
