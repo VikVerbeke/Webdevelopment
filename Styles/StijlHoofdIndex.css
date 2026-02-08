@@ -1,0 +1,38 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    font-family: "Times New Roman", Helvetica, sans-serif;
+    color: #4c463a;
+    background-color: #fbfff1;
+}
+h2 {
+font-weight: bold;
+}
+.foto {
+    width: 450px;  /* Of een percentage, bijv. 50% */
+    height: auto;  /* Cruciaal om vervorming te voorkomen */
+    display: inline-block;
+}
+div {
+    display: inline-block;
+}
+div p {
+    font-style: italic;
+    text-align: center;
+    align-content: center;
+}
+.containerFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.tekst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
