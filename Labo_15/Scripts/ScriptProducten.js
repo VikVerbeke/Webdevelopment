@@ -1,58 +1,39 @@
 const setup = () => {
     let herReken = document.getElementsByClassName("herberekenKnop");
-
-    // we moeten zowel op het input als het change event reageren,
-    // zie http://stackoverflow.com/questions/18544890
     herReken[0].addEventListener("click", herbereken);
 }
 
 const herbereken = () => {
-    // Alle informatie uithalen die ik nodig heb.
-    let prijs = document.getElementsByClassName("Prijs");
-    let aantalen = document.getElementsByClassName("aantal");
-    let btwpercentage = document.getElementsByClassName("BTW");
-
-    // De in te vullen velden er uit halen.
-    let subTot1Element = document.getElementsByClassName("SubTot1");
-    let subTot2Element = document.getElementsByClassName("SubTot2");
-    let subTot3Element = document.getElementsByClassName("SubTot3");
+    // 1. Haal alle lijsten met elementen in één keer op
+    let prijzen = document.getElementsByClassName("Prijs");
+    let aantallen = document.getElementsByClassName("aantal");
+    let btws = document.getElementsByClassName("BTW");
+    let subtotalen = document.getElementsByClassName("SubTot"); // Let op: class naam overal in HTML gelijk maken!
     let eindTotElement = document.getElementsByClassName("Eindtotaal");
 
-    // specifieke informatie uithalen + in variabele plaatsen
-    let prijsInGetal1 = parseFloat(prijs[0].innerText); //InnerText leest OF wijzigt de tekst uit een element.
-    let prijsInGetal2 = parseFloat(prijs[1].innerText);
-    let prijsInGetal3 = parseFloat(prijs[2].innerText);
+    let eindTotaal = 0; // Hierin tellen we straks alle subtotalen op
 
-    let btwInGetal1 = parseFloat(btwpercentage[0].innerText);
-    let btwInGetal2 = parseFloat(btwpercentage[1].innerText);
-    let btwInGetal3 = parseFloat(btwpercentage[2].innerText);
+    // 2. Loop door alle gevonden producten heen
+    for (let i = 0; i < prijzen.length; i++) {
 
-    let aantalInGetal1 = parseFloat(aantalen[0].value); // value haalt de actuele waarde uit een input veld op.
-    let aantalInGetal2 = parseFloat(aantalen[1].value);
-    let aantalInGetal3 = parseFloat(aantalen[2].value);
+        // Specifieke informatie van de huidige rij (i) uithalen
+        let prijs = parseFloat(prijzen[i].innerText);
+        let btw = parseFloat(btws[i].innerText);
+        let aantal = parseFloat(aantallen[i].value);
 
-    // De berekeningen maken
-    let prijsPerMetBTW1 = prijsInGetal1 + (prijsInGetal1 * (btwInGetal1 / 100));
-    let totaalPrijs1 = prijsPerMetBTW1 * aantalInGetal1;
+        // De berekeningen maken voor deze rij
+        let prijsMetBTW = prijs + (prijs * (btw / 100));
+        let totaalPrijs = prijsMetBTW * aantal;
 
-    let prijsPerMetBTW2 = prijsInGetal2 + (prijsInGetal2 * (btwInGetal2 / 100));
-    let totaalPrijs2 = prijsPerMetBTW2 * aantalInGetal2;
+        // Het berekende subtotaal in het juiste veld zetten
+        subtotalen[i].innerText = totaalPrijs.toFixed(2) + " Eur";
 
-    let prijsPerMetBTW3 = prijsInGetal3 + (prijsInGetal3 * (btwInGetal3 / 100));
-    let totaalPrijs3 = prijsPerMetBTW3 * aantalInGetal3;
+        // Het subtotaal optellen bij het grote eindtotaal
+        eindTotaal = eindTotaal + totaalPrijs;
+    }
 
-    // De berekende zaken toekennen aan de velden
-    subTot1Element[0].innerText = totaalPrijs1.toFixed(2) + " Eur";
-    subTot2Element[0].innerText = totaalPrijs2.toFixed(2) + " Eur";
-    subTot3Element[0].innerText = totaalPrijs3.toFixed(2) + " Eur";
-
-    eindTotElement[0].innerText = (totaalPrijs1 + totaalPrijs2 + totaalPrijs3).toFixed(2) + 'EUR'
+    // 3. Tot slot het eindtotaal in de HTML plaatsen
+    eindTotElement[0].innerText = eindTotaal.toFixed(2) + " EUR";
 }
 
-// Dit is de eerste regel code die uitgevoerd wordt,
-// de bovenstaande functie declaraties introduceren
-// enkel de functies en voeren ze niet uit natuurlijk.
-//
-// Onderstaande zorgt ervoor dat de setup functie wordt
-// uitgevoerd zodra de DOM-tree klaar is. */
 window.addEventListener("load", setup);
