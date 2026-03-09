@@ -10,7 +10,8 @@ body {
     /*background-color: #fbfff1;*/
 }
 h2 {
-font-weight: bold;
+    font-weight: bold;
+    font-style: italic;
 }
 .foto {
     width: 450px;  /* Of een percentage, bijv. 50% */
