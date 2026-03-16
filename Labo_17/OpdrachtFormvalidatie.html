@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht formvalidatie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>Opdracht formvalidatie</h1>
+
+<form id="validatieForm" action="#" method="get">
+
+    <label for="voornaam">Voornaam</label>
+    <input type="text" id="voornaam" name="voornaam">
+    <span id="err-voornaam"></span><br><br>
+
+    <label for="familienaam">Familienaam</label>
+    <input type="text" id="familienaam" name="familienaam">
+    <span id="err-familienaam"></span><br><br>
+
+    <label for="geboortedatum">Geboortedatum</label>
+    <input type="text" id="geboortedatum" name="geboortedatum" placeholder="jjjj-mm-dd">
+    <span id="err-geboortedatum"></span><br><br>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email">
+    <span id="err-email"></span><br><br>
+
+    <label for="kinderen">Aantal kinderen</label>
+    <input type="text" id="kinderen" name="kinderen">
+    <span id="err-kinderen"></span><br><br>
+
+    <button type="submit" id="valideerKnop">Valideer</button>
+
+</form>
+
+<script src="Scripts/ScriptFormvalidatie.js"></script>
+
+</body>
+</html>
