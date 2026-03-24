@@ -1,0 +1,43 @@
+.colorDemo {
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    border-radius:10px;
+}
+.alleSliders {
+    box-sizing: border-box;
+    float: left;
+    padding-right: 25px;
+}
+.gekleurdBlokje {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 25px;
+    border-left: 1px black solid;
+}
+p {
+    display: inline-block;
+}
+
+/* UITBREIDING LABO 18 */
+#opgeslagenKleuren {
+    clear: both; /* Zorgt dat de opgeslagen blokjes netjes onder de sliders en hoofdblok komen */
+    padding-top: 20px;
+}
+
+.bewaardeSwatch {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative; /* Cruciaal om de X-knop goed te kunnen plaatsen */
+    cursor: pointer;
+}
+
+.deleteKnop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
