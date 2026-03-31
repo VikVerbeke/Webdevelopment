@@ -1,4 +1,3 @@
-
 const initialize = () => {
     let btnOpnieuw=document.getElementById("btnOpnieuw");
     btnOpnieuw.addEventListener("click", herstartTimer);

@@ -20,9 +20,7 @@ const setup = () => {
 }
 
 const updateSize = () => {
-	// telkens het window van grootte verandert,
-	// wordt deze method opgeroepen
-	// 
+	// telkens het window van grootte verandert, wordt deze method opgeroepen
 	// Merk op dat de <div> voor layout redenen "leeg" is,
 	// omdat het enige kind absoluut gepositioneerd is. Als
 	// we niets speciaals doen zal het dus 0px hoog zijn.

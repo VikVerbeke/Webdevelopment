@@ -1,0 +1,25 @@
+#speelveld {
+    /* Breedte is afgestemd op 4 kaarten + wat ruimte ertussen */
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px auto;
+}
+
+.kaart {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    cursor: pointer; /* Toont een handje als je erover zweeft */
+    border: 3px solid transparent; /* Voorkomt dat de layout verspringt als we later een rand toevoegen */
+}
+
+/* Visuele indicatoren voor goed/fout */
+.goed {
+    border: 3px solid green;
+}
+
+.fout {
+    border: 3px solid red;
+}
