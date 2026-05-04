@@ -3,38 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Hoofdpagina</title>
-
-    <link rel="stylesheet" href="Styles/StijlHoofdIndex.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/StijlHoofdIndex.css">
 </head>
 <body>
 
 <h1>Web Development</h1>
 
 <h2>Labo 2</h2>
-    <ol>
-        <li><a href="Labo_2/Opdracht%203.html">Opdracht 3</a></li>
-        <li><a href="Labo_2/Opdracht4.html">Opdracht 4</a></li>
-        <li><a href="Labo_2/Opdracht5.html">Opdracht 5</a></li>
-        <li><a href="Labo_2/Opdracht6.html">Opdracht 6</a></li>
-        <li><a href="Labo_2/Opdracht7.html">Opdracht 7</a></li>
-        <li><a href="Labo_2/Opdracht8.html">Opdracht 8</a></li>
-        <li><a href="Labo_2/Opdracht9.html">Opdracht 9</a></li>
-        <li><a href="Labo_2/Opdracht10.html">Opdracht 10</a></li>
-        <li><a href="Labo_2/Opdracht11.html">Opdracht 11</a></li>
-        <li><a href="Labo_2/Opdracht12.html">Opdracht 12</a></li>
-        <li><a href="Labo_2/Opdracht13.html">Opdracht 13</a></li>
-    </ol>
+<ol>
+    <li><a href="Labo_2/Opdracht%203.html">Opdracht 3</a></li>
+    <li><a href="Labo_2/Opdracht4.html">Opdracht 4</a></li>
+    <li><a href="Labo_2/Opdracht5.html">Opdracht 5</a></li>
+    <li><a href="Labo_2/Opdracht6.html">Opdracht 6</a></li>
+    <li><a href="Labo_2/Opdracht7.html">Opdracht 7</a></li>
+    <li><a href="Labo_2/Opdracht8.html">Opdracht 8</a></li>
+    <li><a href="Labo_2/Opdracht9.html">Opdracht 9</a></li>
+    <li><a href="Labo_2/Opdracht10.html">Opdracht 10</a></li>
+    <li><a href="Labo_2/Opdracht11.html">Opdracht 11</a></li>
+    <li><a href="Labo_2/Opdracht12.html">Opdracht 12</a></li>
+    <li><a href="Labo_2/Opdracht13.html">Opdracht 13</a></li>
+</ol>
 <h2>Labo 3</h2>
-    <ol>
-        <li><a href="Labo_3/Homepage/Homepage.html">Homepage</a></li>
-        <li><a href="Labo_3/Contact/Contact.html">Hoe kan je ons bereiken?</a></li>
-        <li><a href="Labo_3/Opleidingsaanbod/Opleidingsaanbod.html">Opleidingsaanbod</a></li>
-    </ol>
+<ol>
+    <li><a href="Labo_3/Homepage/Homepage.html">Homepage</a></li>
+    <li><a href="Labo_3/Contact/Contact.html">Hoe kan je ons bereiken?</a></li>
+    <li><a href="Labo_3/Opleidingsaanbod/Opleidingsaanbod.html">Opleidingsaanbod</a></li>
+</ol>
 <h2>Labo 4</h2>
-    <ol>
-        <li><a href="Labo_4/Homepage/Homepage.html">Persoonlijke pagina</a></li>
-    </ol>
+<ol>
+    <li><a href="Labo_4/Homepage/Homepage.html">Persoonlijke pagina</a></li>
+</ol>
 
 <h2>CSS labo's</h2>
 
@@ -162,16 +163,34 @@
     <h1>Foto van het moment ... </h1>
     <div class="containerFlex">
         <div>
-         <img src="Afbeeldingen/GR8_6161-Pagani-achterkant-RAND.jpg" class="foto" alt="Een Dutch-angle shot van de achterkant van een Pagani Huayra BC Tempesta.">
+
+            <a href="#" data-bs-toggle="modal" data-bs-target="#fotoModal">
+                <img src="Afbeeldingen/GR8_6161-Pagani-achterkant-RAND.jpg" class="foto" alt="Een Dutch-angle shot van de achterkant van een Pagani Huayra BC Tempesta.">
+            </a>
         </div>
 
-         <div class="tekst">
+        <div class="tekst">
             <p>Deze foto werd gemaakt op zondag 19 april in Kortrijk Expo tijdens de GR8 International Car Show.</p>
             <p>De wagen op de foto is een Pagani Huayra BC Tempesta. Het is een exclusieve wagen van het merk Italiaanse automerk Pagani.</p>
             <p>&copy; 2026 - <em>Vik Verbeke</em></p>
         </div>
     </div>
+
+    <!-- DE MODAL: Het verborgen venster dat oppopt wanneer je op de foto klikt -->
+    <div class="modal fade" id="fotoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="Afbeeldingen/GR8_6161-Pagani-achterkant-RAND.jpg" class="img-fluid rounded" alt="Een Dutch-angle shot van de achterkant van een Pagani Huayra BC Tempesta.">
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
