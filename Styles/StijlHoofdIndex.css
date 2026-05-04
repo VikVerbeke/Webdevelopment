@@ -42,3 +42,24 @@ div p {
     justify-content: center;
     align-items: center;
 }
+
+/* Standaard link kleur */
+a:link {
+    color: blue; /* Of kies je eigen hex-kleur */
+    text-decoration: underline;
+}
+
+/* Kleur nadat er op geklikt is (de bezocht-status) */
+a:visited {
+    color: purple; /* Dit brengt de klassieke paarse kleur terug */
+}
+
+/* Kleur als je er met de muis overheen zweeft */
+a:hover {
+    color: rgb(95, 179, 126); /* Bijvoorbeeld rood voor een leuk effect */
+}
+
+/* Kleur op het exacte moment van klikken */
+a:active {
+    color: red;
+}
